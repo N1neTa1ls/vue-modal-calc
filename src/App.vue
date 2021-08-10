@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainWindow />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainWindow from "./components/MainWindow.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    MainWindow,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: "Lab Grotesque";
+  src: local("Lab Grotesque Regular"), local("Lab-Grotesque-Regular"),
+    url("./assets/Fonts/LabGrotesque-Regular/LabGrotesque-Regular.woff2")
+      format("woff2"),
+    url("./assets/Fonts/LabGrotesque-Regular/LabGrotesque-Regular.woff")
+      format("woff"),
+    url("./assets/Fonts/LabGrotesque-Regular/LabGrotesque-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: local("Lab Grotesque Medium"), local("Lab-Grotesque-Medium"),
+    url("./assets/Fonts/LabGrotesque-Medium/LabGrotesque-Medium.woff2")
+      format("woff2"),
+    url("./assets/Fonts/LabGrotesque-Medium/LabGrotesque-Medium.woff")
+      format("woff"),
+    url("./assets/Fonts/LabGrotesque-Medium/LabGrotesque-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 </style>
