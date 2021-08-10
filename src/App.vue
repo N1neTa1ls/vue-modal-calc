@@ -41,4 +41,69 @@ export default {
   font-weight: 500;
   font-style: normal;
 }
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .ident {
+    margin: 0;
+    margin-right: 32px;
+  }
+  .big-button {
+    height: 56px;
+  }
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .modal {
+    background: transparent;
+  }
+  .container {
+    border-radius: 30px;
+    background: #fff;
+    width: 50%;
+    min-height: unset;
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    max-height: 74vh;
+    overflow: auto;
+  }
+  .footer {
+    position: static;
+    padding: 0;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 552px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .container {
+    top: 15vh;
+    max-height: unset;
+  }
+  .modal,
+  .main {
+    min-height: 650px;
+  }
+}
 </style>

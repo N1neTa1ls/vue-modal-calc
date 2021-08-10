@@ -112,9 +112,8 @@ h2 {
 }
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  -webkit-appearance: none;
+  margin: 0;
 }
 .calc {
   display: block;
@@ -190,19 +189,4 @@ h2 {
   border: none;
   background: #FF5E56 url(../../assets/ICO/checkbox.svg) no-repeat center center;
 }
-
-@media screen and (min-width: 768px) {
-  .wrapper {
-    margin: 24px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .ident {
-    margin: 0;
-    margin-right: 32px;
-  }
-}
-
 </style>

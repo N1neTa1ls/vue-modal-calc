@@ -63,9 +63,4 @@ export default {
   color: #000;
   background-color: #fff;
 }
-@media screen and (min-width: 768px) {
-  .big-button {
-    height: 56px;
-  }
-}
 </style>
